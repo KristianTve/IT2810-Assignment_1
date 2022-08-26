@@ -29,26 +29,32 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <script>
-    const width = 200
-    const height = 200
-  </script>
+  <script src="js/randomcolor.js"></script>
+  <script src="js/SVGanimation.js"></script>
+  <script src="js/canvasAnimation.js"></script>
 
   <div id="main" class="main">
-    <div id="artist">My name is Karsten Karlsten</div>
-    <div id="desc"> I am gret</div>
+    <div id="artist" class="heading">Hello! My name is Picasso</div>
+    <div id="desc" class="heading">Welcome to my art gallery</div>
   </div>
 
   <div id="images" class="images">
-    <div id="SVG", class="svg"></div>
-    <canvas id="canvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+    <div>
+      <div class="imageDescription">Image created by SVG manipulation</div>
+      <div id="SVG" class="svg" onmouseenter="initiateAnimation()" onmouseleave="stopAnimation()"></div>
+    </div>
+    <div>
+      <div class="imageDescription">Image created by HTML5 canvas API</div>
+      <canvas id="canvas" width="400" height="400" style="border:1px solid #000000;" onmouseenter="animateboi()"></canvas>
+    </div>
   </div>
+
   <script src="js/SVG.js"></script>
   <script src="js/canvas.js"></script>
 
-  <button onclick="">Yabadabadooo</button>
-
+  <div class="buttonsbox">
+    <button onclick="initiateAnimation()" class="changebutton">Vis dokumentasjon</button>
+  </div>
 </body>
 
 </html>

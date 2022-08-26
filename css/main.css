@@ -261,19 +261,47 @@ textarea {
   }
 }
 
-
 .main {
-  size: 200px;
-  right: 20px;
-  display: flex;
-  position: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 20px;
+  width: 100%;
 }
 
 .images {
+  margin-top: 50px;
   display: flex;
+  justify-content: center;
+}
+
+.buttonsbox {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.changebutton {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.imageDescription {
+  display: flex;
+  justify-content: center;
 }
 
 .svg {
   border: 1px solid #000000;
+  margin-right: 50px;
 }
 
