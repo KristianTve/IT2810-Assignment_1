@@ -20,6 +20,7 @@ function createAnimation(itemid, attribute, duration, from, to) {
 }
 
 function initiateAnimation() {
+
   createAnimation("circle1","cx", "10s", 80, 100)
   createAnimation("circle1", "cy", "10s", 80, 400)
 
@@ -31,16 +32,15 @@ function initiateAnimation() {
 }
 
 function stopAnimation() {
-  SVGitem = document.getElementById("circle1")
+  SVGitem = $("#circle1")[0]
   SVGitem.removeChild(document.getElementById("circle1"+"cx"))
   SVGitem.removeChild(document.getElementById("circle1"+"cy"))
 
-
-  SVGitem = document.getElementById("line1")
+  SVGitem = $("#line1")[0]
   SVGitem.removeChild(document.getElementById("line1"+"x2"))
   SVGitem.removeChild(document.getElementById("line1"+"y2"))
 
-  SVGitem = document.getElementById("line3")
+  SVGitem = $("#line3")[0]
   SVGitem.removeChild(document.getElementById("line3"+"x2"))
   SVGitem.removeChild(document.getElementById("line3"+"y2"))
 }
