@@ -13,25 +13,30 @@ function createAnimation(itemid, attribute, duration, from, to) {
   previous_animation = document.getElementById(animationID)
   if (previous_animation != null) {
     SVGitem.removeChild(previous_animation)
-    console.log("Old ")
+    console.log("Error, onmouseenter and leave is not working correctly")
     return
   }
   SVGitem.appendChild(animation)
 }
 
-function initiateAnimation() {
+function startSVGAnimation() {
 
-  createAnimation("circle1","cx", "10s", 80, 100)
-  createAnimation("circle1", "cy", "10s", 80, 400)
+  //createAnimation("circle1","cx", "10s", 80, 100)
+  //createAnimation("circle1", "cy", "10s", 80, 400)
+//
+  //createAnimation("line1","x2", "10s", 0, 400)
+  //createAnimation("line1", "y2", "10s", 400, 0)
+//
+  //createAnimation("line3","x2", "10s", 200, 0)
+  //createAnimation("line3", "y2", "10s", 400, 0)
 
-  createAnimation("line1","x2", "10s", 0, 400)
-  createAnimation("line1", "y2", "10s", 400, 0)
-
-  createAnimation("line3","x2", "10s", 200, 0)
-  createAnimation("line3", "y2", "10s", 400, 0)
+  //createAnimation("arrow1","points", "10s", '25,0 70,45 170,145 -10,45',
+  //                                                                  '325,300 370,345 470,445 290,345')
+  createAnimation("arrow1","points", "10s", '25,0 70,45 170,145 -10,45',
+                                                                    '25,255 70,45 170,145 -10,45')
 }
 
-function stopAnimation() {
+function stopSVGAnimation() {
   SVGitem = $("#circle1")[0]
   SVGitem.removeChild(document.getElementById("circle1"+"cx"))
   SVGitem.removeChild(document.getElementById("circle1"+"cy"))

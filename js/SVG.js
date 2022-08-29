@@ -66,6 +66,19 @@ const f = (() => {
 
   svg1.appendChild(line3);
 
+  // Star
+  const arrow1 = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "polygon",
+  );
+
+  arrow1.setAttribute('points', '25,0 70,45 170,145 -10,45');
+
+  arrow1.setAttribute('stroke', 'seagreen');
+  arrow1.setAttribute('stroke-width', '10');
+
+  svg1.appendChild(arrow1);
+
   // attach container to document
   document.getElementById("SVG").appendChild(svg1);
 });

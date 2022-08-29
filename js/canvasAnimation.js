@@ -10,18 +10,34 @@ var l2posY = 400
 var l3posX = 200
 var l3posY = 400
 var speed = 0.60
+var animate = true
 
 function animateboi() {
   const ctx2 = document.getElementById('canvas').getContext('2d');
   // clear old frame;
   ctx2.clearRect(0, 0, 400, 400); // clear canvas
-  moveCircle()
-  moveLines()
+  if(animate) {
+    moveCircle()
+    moveLines()
+  }
+
   drawCircle(ctx2);
   drawLine(l1posX, l1posY, "seagreen", ctx2)
   drawLine(l2posX, l2posY, "#000000", ctx2)
   drawLine(l3posX, l3posY, "seagreen", ctx2)
-  requestAnimationFrame(animateboi);
+
+  if(animate) {
+    requestAnimationFrame(animateboi);
+  }
+}
+
+function startCanvasAnimation() {
+  animate = true
+  animateboi()
+}
+
+function stopCanvasAnimation() {
+  animate = false
 }
 
 

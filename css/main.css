@@ -305,3 +305,28 @@ textarea {
   margin-right: 50px;
 }
 
+.popupbox {
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: darkgray;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: #222222 3px 5px 15px;
+  overflow: hidden;
+}
+
+.popupTopRow {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.exitbutton {
+  background-color: #ab0000;
+  color: white;
+  border-radius: 5px;
+}
+
+

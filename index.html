@@ -41,19 +41,46 @@
   <div id="images" class="images">
     <div>
       <div class="imageDescription">Image created by SVG manipulation</div>
-      <div id="SVG" class="svg" onmouseenter="initiateAnimation()" onmouseleave="stopAnimation()"></div>
+      <div id="SVG" class="svg" onmouseenter="startSVGAnimation()" onmouseleave="stopSVGAnimation()"></div>
     </div>
     <div>
       <div class="imageDescription">Image created by HTML5 canvas API</div>
-      <canvas id="canvas" width="400" height="400" style="border:1px solid #000000;" onmouseenter="animateboi()"></canvas>
+      <canvas id="canvas" width="400" height="400" style="border:1px solid #000000;" onmouseenter="startCanvasAnimation()" onmouseleave="stopCanvasAnimation()"></canvas>
+    </div>
+    <div class="popupbox" id="popup">
+      <div class="popupTopRow">
+        <button class="exitbutton" onclick="closePopup()">X</button>
+      </div>
+      <h2>CSS Flexbox</h2>
+      <p>I have chosen to only implement CSS-Flexbox as it enabled more inter dynamic element widths without being too constrained.</p>
+      <p>Since I have implemented a row wise element style, using flexbox for each row containing multiple elements in only one dimension made sense</p>
+      <p>If I wanted to have divs with multiple rows inside I would use grid.</p>
+
+      <h2>HTML Canvas</h2>
+      <h2>SVG</h2>
+      <h2>jQuery</h2>
+      <h2>Cross Browser testing</h2>
+      <h2>Most important information sources (tutorials, websites, books)</h2>
     </div>
   </div>
 
   <script src="js/SVG.js"></script>
   <script src="js/canvas.js"></script>
 
+  <script>
+    function closePopup() {
+      $(".popupbox").css('display', 'none')
+    }
+    function openPopup() {
+      $(".popupbox").css('display', 'inline')
+    }
+  </script>
+
+
+
+
   <div class="buttonsbox">
-    <button onclick="initiateAnimation()" class="changebutton">Vis dokumentasjon</button>
+    <button onclick="openPopup()" class="changebutton">Vis dokumentasjon</button>
   </div>
 </body>
 
