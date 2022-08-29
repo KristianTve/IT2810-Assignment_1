@@ -73,8 +73,10 @@ const f = (() => {
   );
 
   arrow1.setAttribute('points', '25,0 70,45 170,145 -10,45');
+  arrow1.setAttribute("id", "arrow1");
 
-  arrow1.setAttribute('stroke', 'seagreen');
+  arrow1.setAttribute("fill", "darkred");
+  arrow1.setAttribute('stroke', 'red');
   arrow1.setAttribute('stroke-width', '10');
 
   svg1.appendChild(arrow1);

@@ -21,19 +21,17 @@ function createAnimation(itemid, attribute, duration, from, to) {
 
 function startSVGAnimation() {
 
-  //createAnimation("circle1","cx", "10s", 80, 100)
-  //createAnimation("circle1", "cy", "10s", 80, 400)
-//
-  //createAnimation("line1","x2", "10s", 0, 400)
-  //createAnimation("line1", "y2", "10s", 400, 0)
-//
-  //createAnimation("line3","x2", "10s", 200, 0)
-  //createAnimation("line3", "y2", "10s", 400, 0)
+  createAnimation("circle1","cx", "10s", 80, 100)
+  createAnimation("circle1", "cy", "10s", 80, 400)
 
-  //createAnimation("arrow1","points", "10s", '25,0 70,45 170,145 -10,45',
-  //                                                                  '325,300 370,345 470,445 290,345')
+  createAnimation("line1","x2", "10s", 0, 400)
+  createAnimation("line1", "y2", "10s", 400, 0)
+
+  createAnimation("line3","x2", "10s", 200, 0)
+  createAnimation("line3", "y2", "10s", 400, 0)
+
   createAnimation("arrow1","points", "10s", '25,0 70,45 170,145 -10,45',
-                                                                    '25,255 70,45 170,145 -10,45')
+                                                                    '400,375 445,420 545,520 365,420')
 }
 
 function stopSVGAnimation() {
@@ -48,4 +46,7 @@ function stopSVGAnimation() {
   SVGitem = $("#line3")[0]
   SVGitem.removeChild(document.getElementById("line3"+"x2"))
   SVGitem.removeChild(document.getElementById("line3"+"y2"))
+
+  SVGitem = $("#arrow1")[0]
+  SVGitem.removeChild(document.getElementById("arrow1"+"points"))
 }

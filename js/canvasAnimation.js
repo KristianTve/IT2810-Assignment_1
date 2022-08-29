@@ -9,6 +9,8 @@ var l2posY = 400
 
 var l3posX = 200
 var l3posY = 400
+
+var arrowPos = [[25, 0], [70, 45], [170, 145], [-10, 45], [25, 0]]
 var speed = 0.60
 var animate = true
 
@@ -19,12 +21,14 @@ function animateboi() {
   if(animate) {
     moveCircle()
     moveLines()
+    moveArrow()
   }
 
   drawCircle(ctx2);
   drawLine(l1posX, l1posY, "seagreen", ctx2)
   drawLine(l2posX, l2posY, "#000000", ctx2)
   drawLine(l3posX, l3posY, "seagreen", ctx2)
+  drawArrow(ctx2)
 
   if(animate) {
     requestAnimationFrame(animateboi);
@@ -59,6 +63,20 @@ function drawLine(toX, toY, color, ctx) {
   ctx.stroke();
 }
 
+function drawArrow(ctx) {
+  ctx.strokeStyle = "red";
+  ctx.beginPath();
+  ctx.moveTo(arrowPos[0][0],arrowPos[0][1])
+  ctx.lineTo(arrowPos[1][0],arrowPos[1][1])
+  ctx.lineTo(arrowPos[2][0],arrowPos[2][1])
+  ctx.lineTo(arrowPos[3][0],arrowPos[3][1])
+  ctx.lineTo(arrowPos[4][0],arrowPos[4][1])
+  ctx.lineWidth = 10;
+  ctx.fillStyle = "darkred";
+  ctx.fill();
+  ctx.stroke();
+}
+
 function moveCircle() {
   c1posY += speed;
   c1posX = (c1posY/400) * 20 + 80
@@ -82,5 +100,22 @@ function moveLines() {
   if (l3posX < 1) {
     l3posX = 200
     l3posY = 400
+  }
+}
+
+function moveArrow() {
+  adjustment = 1.18
+  arrowPos[0][0] += speed * adjustment
+  arrowPos[0][1] += speed * adjustment
+  arrowPos[1][0] += speed * adjustment
+  arrowPos[1][1] += speed * adjustment
+  arrowPos[2][0] += speed * adjustment
+  arrowPos[2][1] += speed * adjustment
+  arrowPos[3][0] += speed * adjustment
+  arrowPos[3][1] += speed * adjustment
+  arrowPos[4][0] += speed * adjustment
+  arrowPos[4][1] += speed * adjustment
+  if (arrowPos[0][0] > 400) {
+    arrowPos = [[25, 0], [70, 45], [170, 145], [-10, 45], [25, 0]]
   }
 }

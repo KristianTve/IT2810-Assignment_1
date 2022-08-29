@@ -31,6 +31,19 @@ ctx.moveTo(80,80)
 ctx.lineTo(200,400)
 ctx.lineWidth = 10;
 ctx.strokeStyle = "seagreen";
+ctx.stroke();
+
+// Arrow
+ctx.beginPath();
+ctx.moveTo(25,0)
+ctx.lineTo(70,45)
+ctx.lineTo(170,145)
+ctx.lineTo(-10,45)
+ctx.lineTo(25,0)
+ctx.lineWidth = 10;
+ctx.fillStyle = "darkred"
+ctx.strokeStyle = "red";
+ctx.fill()
 
 
 ctx.stroke();
