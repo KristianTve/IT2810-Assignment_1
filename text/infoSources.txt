@@ -1,0 +1,1 @@
+<p>Stack overflow, jQuery documentation, w3schools (SVG, Canvas) ++</p>

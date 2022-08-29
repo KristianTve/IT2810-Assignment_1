@@ -1,0 +1,3 @@
+<p>Used jQuery to dynamically change CSS by first selecting the item id and then manipulating the css</p>
+<p>This way i could hide and show a popup upon buttonpresses</p>
+<p>Used jQuery to load text from text files into paragraph section in documentation</p>

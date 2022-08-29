@@ -1,0 +1,5 @@
+<p>Not time based?? Had to experiment with where the objects ended up in a certain time due to difference in travel lengths in the animation.</p>
+<p>In comparison with SVG, you have to clear the whole image and continously redraw all the figures/frames</p>
+<p>Have to move a "cursor" to draw by drawing lines or arcs. Instead of SVG that has a better API with existing shapes like lines, circles or polygons where you just have to supply coordinates of the corners</p>
+<p>By having complete control over every frame that is drawn, the animation can easily be paused by not requesting the next frame. This way the still image of where the animation left off is showed.</p>
+<p>If the animations can move independently of each other in terms of time, canvas is a great choice.</p>

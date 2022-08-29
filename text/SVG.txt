@@ -1,0 +1,4 @@
+<p>Based on time, could set 10 seconds and the whole animation conformed to that time interval</p>
+<p>Do not have to redraw the figures, just change the parameters of the figures</p>
+<p>When the animation is stopped, the image is returned to the original image and not where the animation left off. To fix this the drawing should be manually redrawn and the coordinates of where the animation left off should be calculated by elapsed time.</p>
+<p>If the animations are time sensitive, this is the best option</p>

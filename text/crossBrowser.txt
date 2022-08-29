@@ -1,0 +1,2 @@
+<p>Tested with multiple window sizes, elements stay in the middle and is sized appropriately to not cut off. Popup box is sized relative to the window size in percent, so it adjusts.</p>
+<p>Tested in Microsoft Edge. Canvas, SVG and jQuery functionality still works like in chrome.</p>

@@ -32,6 +32,7 @@
   <script src="js/randomcolor.js"></script>
   <script src="js/SVGanimation.js"></script>
   <script src="js/canvasAnimation.js"></script>
+  <script src="js/textLoader.js"></script>
 
   <div id="main" class="main">
     <div id="artist" class="heading">Hello! My name is Picasso</div>
@@ -52,27 +53,22 @@
         <button class="exitbutton" onclick="closePopup()">X</button>
       </div>
       <h2>CSS Flexbox</h2>
-      <p>I have chosen to only implement CSS-Flexbox as it enabled more inter dynamic element widths without being too constrained.</p>
-      <p>Since I have implemented a row wise element style, using flexbox for each row containing multiple elements in only one dimension made sense</p>
-      <p>If I wanted to have divs with multiple rows inside I would use grid.</p>
+      <p id="cssFlexBox"></p>
 
       <h2>HTML Canvas</h2>
-      <p>Not time based?? Had to experiment with where the objects ended up in a certain time due to difference in travel lengths in the animation.</p>
-      <p>In comparison with SVG, you have to clear the whole image and continously redraw all the figures/frames</p>
-      <p>Have to move a "cursor" to draw by drawing lines or arcs. Instead of SVG that has a better API with existing shapes like lines, circles or polygons where you just have to supply coordinates of the corners</p>
-      <p>By having complete control over every frame that is drawn, the animation can easily be paused by not requesting the next frame. This way the still image of where the animation left off is showed.</p>
-      <p>If the animations can move independently of each other in terms of time, canvas is a great choice.</p>
+      <p id="htmlCanvas"></p>
+
       <h2>SVG</h2>
-      <p>Based on time, could set 10 seconds and the whole animation conformed to that time interval</p>
-      <p>Do not have to redraw the figures, just change the parameters of the figures</p>
-      <p>When the animation is stopped, the image is returned to the original image and not where the animation left off. To fix this the drawing should be manually redrawn and the coordinates of where the animation left off should be calculated by elapsed time.</p>
-      <p>If the animations are time sensitive, this is the best option</p>
+      <p id="SVGtext"></p>
+
       <h2>jQuery</h2>
-      <p>Used jQuery to dynamically change CSS by first selecting the item id and then manipulating the css</p>
-      <p>This way i could hide and show a popup upon buttonpresses</p>
+      <p id="jQueryText"></p>
+
       <h2>Cross Browser testing</h2>
+      <p id="cbt"></p>
+
       <h2>Most important information sources (tutorials, websites, books)</h2>
-      <p>Stack overflow, jQuery documentation, w3schools (SVG, Canvas) ++</p>
+      <p id="infoSources"></p>
     </div>
   </div>
 
