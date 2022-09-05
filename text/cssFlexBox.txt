@@ -1,3 +1,3 @@
 <p>I have chosen to only implement CSS-Flexbox as it enabled more inter dynamic element widths without being too constrained.</p>
 <p>Since I have implemented a row wise element style, using flexbox for each row containing multiple elements in only one dimension made sense</p>
-<p>If I wanted to have divs with multiple rows inside I would use grid.</p>
+<p>If I wanted to have divs with multiple rows and columns inside I would use grid.</p>

@@ -37,3 +37,11 @@
     $("#cbt").html(data);
 }
 });
+
+    $.ajax({
+        url : "text/infoSources.txt",
+        dataType: "text",
+        success : function (data) {
+            $("#infoSources").html(data);
+        }
+    });

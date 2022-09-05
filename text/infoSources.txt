@@ -1,1 +1,8 @@
-<p>Stack overflow, jQuery documentation, w3schools (SVG, Canvas) ++</p>
+<p>Stack overflow, jQuery API documentation, w3schools, mozilla developer docs ++</p>
+<a href="https://www.w3schools.com/">W3Schools</a><br>
+<a href="https://www.w3schools.com/tags/ref_canvas.asp">W3Schools Canvas</a><br>
+<a href="https://developer.mozilla.org/es/docs/Web/API/Canvas_API">Mozilla canvas API</a><br>
+<a href="https://stackoverflow.com/">Stackoverflow</a><br>
+<a href="https://api.jquery.com/">jQuery API documentation</a><br>
+<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Css-Tricks.com guide to flexbox</a><br>
+<a href="https://www.w3.org/Graphics/SVG/WG/wiki/Simple_SVG_API">W3Schools Simple SVG API</a><br>

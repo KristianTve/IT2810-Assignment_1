@@ -271,6 +271,7 @@ textarea {
   justify-content: center;
 }
 
+
 .heading {
   font-size: 40px;
   font-weight: bold;
@@ -314,12 +315,11 @@ textarea {
   display: none;
   position: absolute;
   width: 80%;
-  height: 80%;
+  height: fit-content;
   background-color: darkgray;
   z-index: 1;
   border-radius: 5px;
   box-shadow: #222222 3px 5px 15px;
-  overflow: hidden;
 }
 
 .popupTopRow {

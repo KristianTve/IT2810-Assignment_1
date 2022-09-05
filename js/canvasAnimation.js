@@ -25,9 +25,9 @@ function animateboi() {
   }
 
   drawCircle(ctx2);
-  drawLine(l1posX, l1posY, "seagreen", ctx2)
-  drawLine(l2posX, l2posY, "#000000", ctx2)
-  drawLine(l3posX, l3posY, "seagreen", ctx2)
+  drawLine(l1posX, l1posY, line1col, ctx2)
+  drawLine(l2posX, l2posY, line2col, ctx2)
+  drawLine(l3posX, l3posY, line3col, ctx2)
   drawArrow(ctx2)
 
   if(animate) {
@@ -49,7 +49,7 @@ function drawCircle(ctx) {
   ctx.beginPath();
   ctx.arc(c1posX, c1posY, 34.5, 0, 2 * Math.PI);
   ctx.strokeStyle = "#FFFFFF";
-  ctx.fillStyle = 'darkgreen';
+  ctx.fillStyle = circcol;
   ctx.fill();
   ctx.stroke();
 }
@@ -64,7 +64,7 @@ function drawLine(toX, toY, color, ctx) {
 }
 
 function drawArrow(ctx) {
-  ctx.strokeStyle = "red";
+  ctx.strokeStyle = arrowstroke;
   ctx.beginPath();
   ctx.moveTo(arrowPos[0][0],arrowPos[0][1])
   ctx.lineTo(arrowPos[1][0],arrowPos[1][1])
@@ -72,7 +72,7 @@ function drawArrow(ctx) {
   ctx.lineTo(arrowPos[3][0],arrowPos[3][1])
   ctx.lineTo(arrowPos[4][0],arrowPos[4][1])
   ctx.lineWidth = 10;
-  ctx.fillStyle = "darkred";
+  ctx.fillStyle = arrowfill;
   ctx.fill();
   ctx.stroke();
 }

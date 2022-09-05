@@ -1,3 +1,4 @@
 <p>Used jQuery to dynamically change CSS by first selecting the item id and then manipulating the css</p>
 <p>This way i could hide and show a popup upon buttonpresses</p>
-<p>Used jQuery to load text from text files into paragraph section in documentation</p>
+<p>Used jQuery to load text from text files into paragraph section in documentation using jQuerys Ajax that reads the file and inputs the stream of text into the element with the given id</p>
+<p>In order to change colors of the SVG image, the individual objects of the image were selected and the color attributes were changed.</p>

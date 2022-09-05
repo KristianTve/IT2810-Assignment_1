@@ -2,3 +2,4 @@
 <p>Do not have to redraw the figures, just change the parameters of the figures</p>
 <p>When the animation is stopped, the image is returned to the original image and not where the animation left off. To fix this the drawing should be manually redrawn and the coordinates of where the animation left off should be calculated by elapsed time.</p>
 <p>If the animations are time sensitive, this is the best option</p>
+<p>The SVG could be easily manipulated with jQuery to change colors of the different objects. Click the image to try!</p>
