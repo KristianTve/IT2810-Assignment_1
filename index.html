@@ -32,7 +32,6 @@
   <script src="js/randomcolor.js"></script>
   <script src="js/SVGanimation.js"></script>
   <script src="js/canvasAnimation.js"></script>
-  <script src="js/textLoader.js"></script>
   <script src="js/divScripts.js"></script>
 
   <div id="main" class="main">
@@ -57,22 +56,46 @@
         <button class="exitbutton" onclick="closePopup()">X</button>
       </div>
       <h2>CSS Flexbox</h2>
-      <p id="cssFlexBox"></p>
+      <p>I have chosen to only implement CSS-Flexbox as it enabled more inter dynamic element widths without being too constrained.</p>
+      <p>Since I have implemented a row wise element style, using flexbox for each row containing multiple elements in only one dimension made sense</p>
+      <p>If I wanted to have divs with multiple rows and columns inside I would prefer to use grid, as it offers complete control over multi-element positioning within divs.</p>
 
       <h2>HTML Canvas</h2>
-      <p id="htmlCanvas"></p>
+      <p>Animation of canvas is based on redrawing individual frames, making it harder to keep exact time as in SVG. Had to experiment with where the objects ended up in a certain time due to difference in travel lengths in the animation.</p>
+      <p>In comparison with SVG, you have to clear the whole image and continously redraw all the figures/frames</p>
+      <p>Have to move a "cursor" to draw by drawing lines or arcs. Instead of SVG that has a better API with existing shapes like lines, circles or polygons where you just have to supply coordinates of the corners</p>
+      <p>By having complete control over every frame that is drawn, the animation can easily be paused by not requesting the next frame. This way the still image of where the animation left off is showed.</p>
+      <p>If the animations should move independently of each other in terms of time, canvas is a great choice.</p>
+      <p>Made the canvas interactive by changing color variables and then redrawing the frame to update the color, without jQuery (click to try)</p>
 
       <h2>SVG</h2>
-      <p id="SVGtext"></p>
+      <p>Based on time, could set 10 seconds and the whole animation conformed to that time interval</p>
+      <p>Do not have to redraw the figures, just change the parameters of the figures</p>
+      <p>When the animation is stopped, the image is returned to the original image and not where the animation left off. To fix this the drawing should be manually redrawn and the coordinates of where the animation left off should be calculated by elapsed time.</p>
+      <p>If the animations are time sensitive, this is the best option</p>
+      <p>The SVG could be easily manipulated with jQuery to change colors of the different objects. Click the image to try!</p>
 
       <h2>jQuery</h2>
-      <p id="jQueryText"></p>
+      <p>Used jQuery to dynamically change CSS by first selecting the item id and then manipulating the css</p>
+      <p>This way i could hide and show a popup upon buttonpresses</p>
+      <p>Used jQuery to load text from text files into paragraph section in documentation using jQuerys Ajax that reads the file and inputs the stream of text into the element with the given id (NB: This turned out not to work when outside the IDE! But can be seen in the textLoader.js file)</p>
+      <p>In order to change colors of the SVG image, the individual objects of the image were selected and the color attributes were changed.</p>
 
       <h2>Cross Browser testing</h2>
-      <p id="cbt"></p>
+      <p>Tested with multiple window sizes, elements stay in the middle and is sized appropriately to not cut off. Popup box is sized relative to the window size in percent, so it adjusts.</p>
+      <p>Tested in Microsoft Edge, Chrome and Mozilla Firefox. Canvas, SVG and jQuery functionality works identical across browsers</p>
+      <p>CSS also displays correctly in all browsers</p>
 
       <h2>Most important information sources (tutorials, websites, books)</h2>
-      <p id="infoSources"></p>
+      <p>Stack overflow, jQuery API documentation, w3schools, mozilla developer docs ++</p>
+      <a href="https://www.w3schools.com/">W3Schools</a><br>
+      <a href="https://www.w3schools.com/tags/ref_canvas.asp">W3Schools Canvas</a><br>
+      <a href="https://developer.mozilla.org/es/docs/Web/API/Canvas_API">Mozilla canvas API</a><br>
+      <a href="https://stackoverflow.com/">Stackoverflow</a><br>
+      <a href="https://api.jquery.com/">jQuery API documentation</a><br>
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Css-Tricks.com guide to flexbox</a><br>
+      <a href="https://www.w3.org/Graphics/SVG/WG/wiki/Simple_SVG_API">W3Schools Simple SVG API</a><br>
+
     </div>
   </div>
 
